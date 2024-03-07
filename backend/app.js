@@ -16,6 +16,9 @@ app.options("*", cors());
 app.use(express.urlencoded({ extended: false }));
 
 //routes
+app.use("/api/users", require("./routes/userRoutes.js"))
+app.use("/api/outcomes", require("./routes/outcomeRoutes.js"))
+app.use('/api/incomes', require('./routes/incomeRoutes.js'))
 
 app.use(errorHandler)
 //port

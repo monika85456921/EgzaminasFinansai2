@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+    <title>Egzaminas</title>
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="header" id="header">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="./index.html">PAGRIBDINISLOGO</a>
+        </li>
+        <li class="nav__item">
+          <a href="./home.html">home</a>
+        </li>
+        <li class="nav__item">
+          <a href="./about.html">about</a>
+        </li>
+      </ul>
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+      <section class="home section">
+        <div class="home__content">
+          <!-- LOGIN -->
+          <form action="" class="contact__form login__form" id="loginForm">
+            <h2 class="section__title">Login</h2>
+            <label for="email" class="contact__label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="loginFormEmailInput"
+              required
+              placeholder="Enter your email"
+              class="contact__input"
+            />
+            <label for="password" class="contact__label">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="loginFormPasswordInput"
+              required
+              placeholder="Enter your password"
+              class="contact__input"
+            />
+            <button
+              type="submit"
+              id="loginFormSubmit"
+              class="contact__send button btn"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+        <div class="home__content">
+          <form action="" class="contact__form signup__form" id="signupForm">
+            <h2 class="section__title">Register</h2>
+            <label for="name" class="contact__label">Name</label>
+            <input
+              type="name"
+              name="name"
+              id="signupFormNameInput"
+              required
+              placeholder="Enter your username"
+              class="contact__input"
+            />
+            <label for="email" class="contact__label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="signupFormEmailInput"
+              required
+              placeholder="Enter your email"
+              class="contact__input"
+            />
+            <label for="password" class="contact__label">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="signupFormPasswordInput"
+              required
+              placeholder="Enter your password"
+              class="contact__input"
+            />
+
+            <button
+              type="submit"
+              id="signupFormSubmit"
+              class="contact__send button"
+            >
+              Register
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Monika Pastelė 2024 &copy</p>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script src="./js/index.js"></script>
+    <script src="./js/register.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
