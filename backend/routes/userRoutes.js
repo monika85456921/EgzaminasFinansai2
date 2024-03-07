@@ -5,7 +5,7 @@ const {
   loginUser,
   getUser,
   getAllUsers,
-  deleteUser
+  deleteUser,
 } = require("../controllers/userController.js");
 
 const protect = require("../middleware/authentication.js");
