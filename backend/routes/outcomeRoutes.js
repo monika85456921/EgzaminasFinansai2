@@ -2,7 +2,11 @@ const express = require("express");
 const router = express.Router();
 
 const {
-  
+    getAllOutcomes,
+    getOutcome,
+    getOutcomes,
+    updateOutcome,
+    deleteOutcome
 } = require("../controllers/outcomeController.js");
 const protect = require("../middleware/authentication.js");
 const protectAdmin = require("../middleware/adminAuthentication.js");

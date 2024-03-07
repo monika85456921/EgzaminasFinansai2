@@ -2,7 +2,11 @@ const express = require('express')
 const router = express.Router()
 
 const {
-    
+    createIncome,
+    getAllIncomes,
+    getIncomes,
+    updateIncome,
+    deleteIncome
 } = require('../controllers/incomeController.js')
 const protect = require('../middleware/authentication.js')
 const protectAdmin = require('../middleware/adminAuthentication.js')

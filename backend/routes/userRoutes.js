@@ -2,7 +2,10 @@ const express = require("express");
 const router = express.Router();
 const {
   registerUser,
-  loginUser
+  loginUser,
+  getUser,
+  getAllUsers,
+  deleteUser
 } = require("../controllers/userController.js");
 
 const protect = require("../middleware/authentication.js");
