@@ -79,7 +79,10 @@ body {
     display: flex;
     justify-content: center;
   }
-  
+  .link{
+    text-decoration: none;
+    color: #ffffff;
+  }
   
   /* dashboard */
   .section {
