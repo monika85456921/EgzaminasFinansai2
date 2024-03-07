@@ -2,8 +2,8 @@ require("dotenv").config()
 const cors = require("cors")
 
 const express = require("express")
-
 //error handler
+const errorHandler = require("./middleware/errorhandler.js")
 
 //connect to db
 const connectToDB = require("./config/db.js")
@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 
 //routes
 
-// app.use(errorHandler)
+app.use(errorHandler)
 //port
 app.listen(process.env.PORT,()=>{
     console.log(`Server is running: port-${process.env.PORT}`)
